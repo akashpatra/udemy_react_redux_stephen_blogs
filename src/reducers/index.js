@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
+import postsReducer from './postsReducer';
 
 export default combineReducers({
-  // Tricking Redux to make the error go away for intial project setup.
-  replaceMe: () => 'hi there',
+  posts: postsReducer,
 });
